@@ -7,6 +7,8 @@ import sublinks from '../data';
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
 
+  console.log('this component was rerendered')
+
   return (
     <div
       className={`${isSidebarOpen ? 'sidebar-wrapper show' : 'sidebar-wrapper'
